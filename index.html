@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Sharing Your Favorite Movies</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+<div id="popUp" class="loaderHidden">
+          <a href="#" class="closePopUp">X</a>
+          <div id="container"> 
+          </div>
+          <button  class="popUpAction">Post to board</button>
+        </div>
+ 
+  <div class="container">
+    <div class="panel-group">
+      <div class="panel panel-danger">
+        <div class="panel-body">
+          <form action="" id="movie-form">
+            <div class="form-group">
+              <label> Your Favorite Movie:</label>
+              <input id="movie" type="text" name="">
+            </div>
+            <button class="search">Search</button>
+          </form>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading" >Movie Board</div>
+        <div class="panel-body" >
+          <ul class="movie-board" >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
